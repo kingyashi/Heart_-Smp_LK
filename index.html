@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HEART SMP</title>
+<meta name="description" content="Heart SMP - 10 unique hearts, custom powers, steal hearts by winning fights.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">❤ HEART</a>
+  <nav><a href="#how">How it works</a><a href="#hearts">Hearts</a><a href="#rules">Rules</a><a href="#join">Join</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="beat">❤</div>
+    <h1>HEART</h1>
+    <p class="tag">Collect hearts. Steal power. Survive.</p>
+    <button class="ip" id="ip-btn" type="button"><span id="ip-text"></span><small id="ip-hint">Click to copy IP</small></button>
+    <a class="btn" id="discord-btn" href="#" target="_blank" rel="noopener">Join our Discord</a>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="grid three">
+      <article class="card"><h3>🎲 Get a heart</h3><p>Join for the first time and you receive a random heart with its own powers. Every heart also gives you <b>+1 extra heart</b> of health.</p></article>
+      <article class="card"><h3>⚔️ Steal hearts</h3><p>Kill another player and you take their heart(s) too. Stack powers - but everyone will be hunting you.</p></article>
+      <article class="card"><h3>🔨 Only 3 maces</h3><p>Just three maces exist on the whole server. Admins can always see who holds them.</p></article>
+    </div>
+    <p class="note">🐉 The <b>Ender Heart</b> can't be rolled - it only goes to the player who kills the Ender Dragon.</p>
+  </section>
+
+  <section id="hearts">
+    <h2>The 10 Hearts</h2>
+    <p class="sub">Check yours in-game with <code>/heart info</code> - see who has what with <code>/hearts</code>.</p>
+    <div class="grid" id="hearts-grid"></div>
+  </section>
+
+  <section id="rules">
+    <h2>Rules</h2>
+    <ol class="rules" id="rules-list"></ol>
+  </section>
+
+  <section id="join">
+    <h2>Ready to play?</h2>
+    <p class="sub" id="join-text"></p>
+    <button class="ip big" id="ip-btn2" type="button"><span id="ip-text2"></span><small>Click to copy IP</small></button>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Heart SMP · Not affiliated with Mojang or Microsoft.</footer>
+<script src="script.js"></script>
+</body>
+</html>
